@@ -1,7 +1,7 @@
 /**
- * Programa: Caixa
- * Autor: Marcos Gabriel De Oliveira Favaretto
- * Data: 13 de Agosto de 2019
+ * Programa: Caixa.
+ * Autor: Marcos Gabriel De Oliveira Favaretto.
+ * Data: 13 de Agosto de 2019.
  */
 package Caixa;
 
@@ -22,7 +22,7 @@ public class Caixa {
         descontoDaVenda = Float.parseFloat(JOptionPane.showInputDialog("Insira o desconto em % abaixo: ").replace("%", ""));
         valorTotalDaCompra = quantidadeDoProduto * valorUnitárioDoProduto - (quantidadeDoProduto * valorUnitárioDoProduto * (descontoDaVenda / 100));
         DecimalFormat mascaraDoTexto = new DecimalFormat("R$ #,##0.00");
-        JOptionPane.showMessageDialog(null, "Produto: " + nomeDoProduto + "\n" + "Quantidade: " + String.valueOf(quantidadeDoProduto) + "\n" + "Valor unitário: " + mascaraDoTexto.format(valorUnitárioDoProduto) + "\n" + "Desconto: "+String.valueOf(descontoDaVenda) +"% \n"+"VALOR TOTAL DA COMPRA: "+mascaraDoTexto.format(valorTotalDaCompra));
+        JOptionPane.showMessageDialog(null, "Produto: " + nomeDoProduto + "\n" + "Quantidade: " + String.valueOf(quantidadeDoProduto) + "\n" + "Valor unitário: " + mascaraDoTexto.format(valorUnitárioDoProduto) + "\n" + "Desconto: " + String.valueOf(descontoDaVenda) + "% \n" + "VALOR TOTAL DA COMPRA: " + mascaraDoTexto.format(valorTotalDaCompra));
         System.exit(0);
     }
 }
